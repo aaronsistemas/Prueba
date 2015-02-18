@@ -7,11 +7,11 @@
 	<body>
 		<form id="login">
 			<h1>Iniciar Sesión</h1>
-			<input id="nickname" type="email" title="Ejemplo: micorreo@dominio.com" pattern="^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$" placeholder="Usuario" required>
+			<input id="nickname" type="email" title="Ejemplo: micorreo@dominio.com" placeholder="Usuario">
 			<br><br>
-			<input id="contraseña" type="password" title="Máximo 6 caracteres" placeholder="Clave" maxlength="6" required>
+			<input id="contraseña" type="password" title="Máximo 6 caracteres" placeholder="Clave" maxlength="6">
 			<h3><a href="#">¿Olvidó Password?</a></h3>
-			<input type="submit" value="Ingresar" onclick="login()">
+			<input type="button" value="Ingresar" onclick="login()">
 		</form>	
 		<script src="javascript/code.js" type="text/javascript"></script>
 	</body>

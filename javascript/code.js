@@ -1,8 +1,8 @@
 function login(){
+	var encontro = false;
 	var users = [{user:"aaronsistemas@hotmail.com", password:"123456"},{user:"ajjulio6@misena.edu.co", password:"654321"},{user:"aarontronic10@gmail.com", password:"123654"}];
 	var usuario = [document.getElementById('nickname').value, document.getElementById('contraseña').value];
 	alert(usuario);
-	var encontro = false;
 	for (var i = 0; i < users.length; i++) {
 
 		if (users[i].user == usuario[0] && users[i].password == usuario[1]){
@@ -12,9 +12,12 @@ function login(){
 				break;
 		}	
 	}
-	if (encontro == false){
+
+	if (encontro){
+		window.location.href="http://google.com";	
+	}else{
 		alert("Login Incorrecto");
 		localStorage.removeItem('usuario');
-		window.location="http://developando.com/blogNuevo";
-	}	
+		window.location.href="http://developando.com/blogNuevo";
+	}
 }
